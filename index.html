@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        body{
+              margin: 0px;
+              padding: 0px;
+              overflow-x: hidden;
+            }
+        .main{
+            background-color: #c9c9c8;
+            width: 100vw;
+            height: 100vh;
+           
+            
+        }
+        .circle{
+            z-index: 22;
+            /* background-color: #c6408a; */
+            /* background-color: #e7756a; */
+            background-color: #231d32;
+            height: 100.3vh;
+            width: 50vw;
+            /* border: 3px solid rgb(113, 20, 113); */
+            position: absolute;
+            top: -1vh;
+            left: 50vw;
+            border-top-left-radius: 80%;
+            border-bottom-left-radius: 80%;
+            overflow-x:hidden;
+            overflow-y: hidden;
+        }
+        .landing>img{
+            z-index: 23;
+            position: relative;
+            left: 62vw;
+            top: 1.5vh;
+            width: 500px;
+            height:500px;
+        }
+        .navbar{
+            display: flex;
+            margin-left: 30px; 
+        }
+        .navbar>h3{
+            position: sticky;
+            font-family: 'Anton', sans-serif;
+            /* border: 3px solid green; */
+        }
+        ul{    
+               z-index: 24;
+               position: absolute;
+               left: 63vw;
+               display: flex;
+               width: 35vw;
+               justify-content: space-evenly;
+        }
+        ul>li{
+            list-style: none;
+        }
+        li>a{
+            color: white;
+            font-weight: 600;
+            font-family: 'Oswald', sans-serif;
+        
+        }
+        a:hover{
+            color:#f2e982;
+            cursor: pointer;
+        }
+        .signin{
+            color:rgb(2, 97, 65);
+            font-weight: 600;
+        }
+        .text_button_container{
+            /* border: 2px solid black; */
+            width: 38vw;
+            height: 32vh;
+            position: absolute;  
+            top: 27vh;
+            left: 6vw;
+            text-align: center;
+        }
+        .text_button_container>h1{
+            font-size: 11.2vmin;
+            color:#737373;
+            font-family: 'Anton', sans-serif;
+            
+        }
+        .button_cont{
+            /* border: 2px solid red; */
+            display: flex;
+            justify-content: space-evenly;
+            position: relative;
+            bottom: 2.5vh;
+
+        }
+        .land_butt{
+            color: white;
+            font-weight: bold;
+            width: 11vw;
+            height: 8vh;
+            /* border: 3px solid black ; */
+            border-radius: 12px;
+            /* background-color: #c6408a; */
+            /* background-color: #e7756a; */
+            background-color: #231d32;
+
+        }
+        .land_butt:hover{
+            border: 3px solid #231d32 ;
+            cursor: pointer;
+            background-color: #c6408a;
+            /* background-color: #e7756a; */
+        }
+        .our_offer{
+            margin-top: -10px;
+            width: 100vw;
+            height: 70vh;
+            background-color:#ffdd59;
+        }
+        .our_offer>h1{
+            color: #231d32;
+            margin-top: 82px;
+            font-size: 6.5vmin;
+            /* font-family: 'Anton', sans-serif; */
+            /* font-family: 'Oswald', sans-serif; */
+            font-family: sans-serif;
+            font-weight: bolder;
+            text-align: center;
+            
+        }
+        .offer_details{
+            /* border: 2px solid green; */
+            margin-left:5vw;
+            width: 90vw;
+            height: 50vh;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .mentor{
+            position: relative;
+            top: 14.5vh;
+            left: mentorvw;
+            border: 2px solid transparent;
+            width: 19vw;
+            height: 30vh;
+            border-radius: 10px;
+            background: #eff0ec;     
+        }
+        #ment{
+            width:16vw;
+            margin-top: -129px;
+            margin-left: 20px;
+            
+        }
+       #mentorship{
+        margin-top: 5px;
+        display: inline-block;
+        margin-left: 70px;
+        color: #231d32;
+       }
+
+       #funds{
+        /* border: 2px solid black; */
+        margin-top:-81px;
+        margin-left: 25px;
+        width: 14vw;
+       }
+       #fundings{
+                margin-top: 24px;
+                margin-left:77px;
+                color: #231d32;
+       }
+       #supp{
+                /* border: 2px solid black; */
+                margin-top:-128px;
+                margin-left: 37px;
+       }
+       #support{
+                  margin-left: 80px;
+                  color: #231d32;
+       }
+       .offer_btn{
+        margin-top: -20px;
+        margin-left: 88px;
+        height:4vh;
+        border: 2px solid transparent;
+        border-radius: 4px;
+        background-color: #c6408a;
+        color: white;
+       }
+       .offer_btn:hover{
+        cursor: pointer;
+        border: 2px solid #231d32;
+
+       }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <section class = 'landing'>
+            <div class="navbar">
+                <h3>GO_START_UP</h3>
+                <ul>
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Services</a></li>
+                    <li><a class="signin">signup/login</a></li>
+                </ul>
+            </div>
+            <div class="circle">
+            </div>
+            <img src="new_one.png" alt=""> 
+            <div class="text_button_container">
+
+                <h1>Let's Dare To Do</h1>
+
+                <div class="button_cont">
+                    <button class="land_butt">START UP</button>
+                    <button class="land_butt">INVESTMENT</button>
+                </div>
+
+            </div>
+        </section>
+        <section class="our_offer">
+                  <h1>What We Offer</h1>
+                  <div class="offers">
+                   <div class="offer_details">
+                    <div class="mentor">
+                        <img src="offer_image03.png" alt="" id="ment">
+                        <h1 id="mentorship">Mentorship</h1>
+                        <button class="offer_btn">Know More</button>
+
+                    </div>
+                    <div class="mentor">
+                        <img id = "funds"src="offer_image01.png" alt="">
+                        <h1 id="fundings">Fundings</h1>
+                        <button class="offer_btn">Know More</button>
+
+                    </div>
+                    <div class="mentor">
+                        <img id="supp" src="offer_image02.png" alt="">
+                        <h1 id="support">Support</h1>
+                        <button class="offer_btn">Know More</button>
+
+                    </div>
+
+                    </div>
+                   </div>
+                  </div>
+        </section>
+    </div>
+</body>
+</html>
